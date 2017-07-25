@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sudo /usr/sbin/bearerbox /usr/local/sbin/kannel.conf &
+sudo /usr/sbin/smsbox /usr/local/sbin/kannel.conf &
+
+
+
+###Howto Stop the kannel service
+
+#/etc/init.d/kannel stop
+
+#http://localhost:13131/cgi-bin/sendsms?username=root&password=sms&to=254700928129&text=ZAIB+KANNEL+WORK&smsc=smsc0&mclass=0
